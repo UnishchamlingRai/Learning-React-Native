@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const object = {
+        "-OB-cf5tw8vHut5MFJvV": {
+          amount: 800,
+          date: "2027-11-05T00:00:00.000Z",
+          description: "Buy laptop ",
+        },
+        "-OB04gAlZDM_RmGCgiNb": {
+          amount: 500,
+          date: "2024-11-05T00:00:00.000Z",
+          description: "Mobile",
+        },
+      };
+      console.log(object);
+      const data = Object.entries(object);
+      console.log("data:", data);
+      const arry = data.map((ar) => {
+        return { id: ar[0], ...ar[1] };
+      });
+      console.log(arry);
+    </script>
+  </body>
+</html>
